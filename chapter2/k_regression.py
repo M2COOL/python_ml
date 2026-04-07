@@ -7,3 +7,5 @@ reg = KNeighborsRegressor(n_neighbors=3)
 reg.fit(X_train, y_train)
 
 print(f"Test set predictions: {reg.predict(X_test)}")
+
+print(f"Test set R^2 {reg.score(X_test, y_test)}")
